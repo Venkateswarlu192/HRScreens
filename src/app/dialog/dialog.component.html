@@ -1,0 +1,50 @@
+<div class="modal-dialog">
+<div class="modal-header" style="background-color: #C1DAED;  height: 50px; margin: -52px -24px 0px -24px;">
+<strong mat-dialog-title style="color: #0070AC; margin: initial;">Add Departments  </strong>
+<img src="../../assets/images/cross-icon"  data-bs-dismiss="modal" aria-label="Close" >
+<!-- <button class="btn btn-outline-warning" style="color: orange;margin-left: 1050px; border-radius: 33px; margin-top: -46px; height: 36px;
+width: 159px;"> 
+<a data-bs-toggle="modal" data-bs-target="#exampleModal"> +Add Holidays</a></button> -->
+</div>
+
+<!-- Modal -->
+
+</div>
+   <div mat-dialog-content >
+    <form class="example-form" (ngSubmit)="onSubmit();">
+
+      <h4 style="margin: 20px 0px 0px 10px;">Department Name <span class="text-danger">*</span></h4>
+      
+       <mat-form-field appearance="outline" class="col-md-12">
+             <input style="border-color: 1px solid lightgray;" type="departmetName" matInput [formControl]="departmentFormControl" [errorStateMatcher]="matcher"placeholder="department name">
+          <mat-error *ngIf="departmentFormControl.hasError('email') && !departmentFormControl.hasError('required')">
+                Please enter a department name
+              </mat-error>
+              <mat-error *ngIf="departmentFormControl.hasError('required')">
+               enter department it is <strong>required</strong></mat-error>
+          </mat-form-field>
+    </form>
+
+    </div>
+
+<div mat-dialog-action [align]="'end'">
+    <button type="submit" aria-label="Close" class="btn btn-#0070AC" data-bs-dismiss="modal" aria-label="Close"  style=" border-radius: 18px;background-color: #0070AC ;color: white; "
+    [disabled]="!checkoutForm.valid" >Submit</button>
+</div>
+
+
+   <!-- <div mat-dialog-content >
+      <mat-form-field appearance="outline">
+
+        
+      
+      </mat-form-field>
+
+    
+    </div>
+<div mat-dialog-action [align]="'end'">
+    <button type="submit" aria-label="Close" class="btn btn-#0070AC" data-bs-dismiss="modal" aria-label="Close"  style=" border-radius: 18px;background-color: #0070AC ;color: white; "
+    >Submit</button>
+</div> -->
+
+

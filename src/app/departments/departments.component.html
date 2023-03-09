@@ -1,0 +1,398 @@
+<div  style="background-color:whitesmoke;">
+<div class="topright" style="display: flex; justify-content: flex-end; margin-right: 37px;">
+    <img  class="img1" src="../../assets/images/notifications_black_24dp.svg">
+    <img  class="img2" src="../../assets/images/MicrosoftTeams-image6.png">
+</div>     
+<div class="row">
+<h1 style="color: #0070AC; ">Department</h1>
+  <button class="btn btn-outline-warning" style="color: orange;margin-left: 1092px; border-radius: 33px; margin-top: -46px; height: 36px;
+          width: 160px;" data-toggle="modal" data-target="#myModal"> 
+          <a data-bs-toggle="modal" data-bs-target="#exampleModal"> +Add Departments</a></button>
+      
+
+
+<div _ngcontent-bub-c108="" class="card" style="width: 1254px;height: 500px; border-radius: 8px;"> 
+   <div _ngcontent-bub-c108="" class="card-body">                      
+              <div _ngcontent-fgp-c153="" class="col-12 col-sm-6">
+                <div _ngcontent-fgp-c153="" class="text-center text-sm-start">
+                  <label _ngcontent-fgp-c153="" class="form-label me-1">Show <select _ngcontent-fgp-c153="" name="pageSize" id="event-category" required="" class="form-select form-select-sm w-auto ms-1 me-1 d-inline ng-valid ng-dirty ng-touched">
+                    <option _ngcontent-fgp-c153="" value="10">10</option>
+                    <option _ngcontent-fgp-c153="" value="25">25</option>
+                    <option _ngcontent-fgp-c153="" value="50">50</option>
+                    <option _ngcontent-fgp-c153="" value="100">100</option>
+                   </select> entries</label>
+                  </div>
+                </div>
+                <div class="table-in" style="width: 1201px;  background-color: white; border: 1px solid lightgray;">
+                  <table mat-table class="table table-striped" style="width: 1199px; ">
+                      <thead>
+                          <tr>
+                              <th> #</th>
+                              <th>Departments Name</th>
+                              <th style="width: 50px;"> Action</th>       
+                          </tr>
+                      </thead> 
+                      <tbody>
+  
+                        <tr>
+                          <th> 1</th>
+                          <th>Web devlopment</th>
+                          <th><button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                            <mat-icon>more_vert</mat-icon>
+                            </button>
+                            <mat-menu #menu="matMenu">
+                            <button mat-menu-item>
+                            <mat-icon>border_color</mat-icon>
+                            <span>Edit</span>
+                            </button>
+                            <button mat-menu-item>
+                            <mat-icon>delete</mat-icon>
+                            <span>Delete</span>
+                            </button>
+                            </mat-menu></th>       
+                      </tr>
+  
+                      <tr>
+                        <th> 2</th>
+                        <th>Application devlopment</th>
+                        <th><button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                          <mat-icon>more_vert</mat-icon>
+                          </button>
+                          <mat-menu #menu="matMenu">
+                          <button mat-menu-item>
+                          <mat-icon>border_color</mat-icon>
+                          <span>Edit</span>
+                          </button>
+                          <button mat-menu-item>
+                          <mat-icon>delete</mat-icon>
+                          <span>Delete</span>
+                          </button>
+                          </mat-menu></th>      
+                    </tr>
+                  
+                      </tbody>
+                   </table>
+                   <table class="table table-striped" style=" width:1200;  " class="table">
+                    <thead  style="background: #F6F7FC;" >
+                        <tr>
+                          <th  class="th" scope="col" >#</th>
+                            <th  class="th" scope="col">Title</th>
+                            <th   class="th" scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td> 1</td>
+                        <td>Web devlopment</td>
+                        <td><button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                          <mat-icon>more_vert</mat-icon>
+                          </button>
+                          <mat-menu #menu="matMenu">
+                          <button mat-menu-item>
+                          <mat-icon>border_color</mat-icon>
+                          <span>Edit</span>
+                          </button>
+                          <button mat-menu-item>
+                          <mat-icon>delete</mat-icon>
+                          <span>Delete</span>
+                          </button>
+                          </mat-menu></td>
+                    </tr>
+
+                    <tr>
+                      <td> 2</td>
+                      <td>Application devlopment</td>
+                      <td><button mat-icon-button [matMenuTriggerFor]="menu" aria-label="edit icon-button with a menu">
+                        <mat-icon>more_vert</mat-icon>
+                        </button>
+                        <mat-menu #menu="matMenu">
+                        <button mat-menu-item>
+                        <mat-icon>border_color</mat-icon>
+                        <span>Edit</span>
+                        </button>
+                        <button mat-menu-item>
+                        <mat-icon>delete</mat-icon>
+                        <span>Delete</span>
+                        </button>
+                        </mat-menu></td>      
+                  </tr>
+                
+                    </tbody>
+                
+                </table >
+  
+  
+  
+                 
+            </div>
+         </div>
+         <!-- <div class="topright" style="display: flex; justify-content: flex-end;margin-right: 80px;">
+
+          <img  class="img1" src="../../assets/images/notifications_black_24dp.svg" style="width: 30px;height: 30px;top: 10px;position: fixed;margin-left: 35px;">
+         <img  class="img2" src="../../assets/images/MicrosoftTeams-image6.png" style="width: 30px;height: 30px;top: 10px;position: fixed;">
+       
+       </div>
+           <div class="row">
+         <h1 style="color:#0070ac; margin-top: 70px; position: fixed;margin-left: 50px;">Department</h1>       
+           <button class="btn btn-outline-warning" style=" margin-top: 70px;position: fixed;color: orange;margin-left: 1110px; border-radius: 33px;  height: 36px;
+                 width: 160px;" data-toggle="modal" data-target="#myModal">
+                 <a data-bs-toggle="modal" data-bs-target="#exampleModal"> +Add Departments</a></button>
+         </div>
+         <div _ngcontent-bub-c108="" class="card" style="border-radius: 10px; height: 500px; width: 1200px; margin-top: 120px;margin-left: 50px; border-radius: 8px;">
+
+          <div _ngcontent-bub-c108="" class="card-body">                
+
+                     <div _ngcontent-fgp-c153="" class="col-12 col-sm-6">
+
+                       <div _ngcontent-fgp-c153="" class="text-center text-sm-start">
+
+                         <label _ngcontent-fgp-c153="" class="form-label me-1">Show <select _ngcontent-fgp-c153="" name="pageSize" id="event-category" required="" class="form-select form-select-sm w-auto ms-1 me-1 d-inline ng-valid ng-dirty ng-touched">
+
+                           <option _ngcontent-fgp-c153="" value="10">10</option>
+
+                           <option _ngcontent-fgp-c153="" value="25">25</option>
+
+                           <option _ngcontent-fgp-c153="" value="50">50</option>
+
+                           <option _ngcontent-fgp-c153="" value="100">100</option>
+
+                           </select> entries</label>
+
+                         </div>
+
+                       </div>
+                       <div class="table-in" style="margin: 0px 15px 0px 10px;  width: 1150px;  background-color: white; border: 1px solid lightgray;">
+
+                        <table class="table table-striped" style=" width: 1150px; ">
+              
+                            <thead>
+              
+                                <tr>
+              
+                                    <th> #</th>
+              
+                                    <th>Departments Name</th>
+              
+                                    <th style="width: 50px;"> Action</th>      
+              
+                                </tr>
+              
+                            </thead>
+                            <tbody>
+                            <tr>
+
+                              <th> 2</th>
+              
+                              <th>Application Department</th>
+              
+                              <th><button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+              
+                                <mat-icon>more_vert</mat-icon>
+              
+                                </button>
+              
+                                <mat-menu #menu="matMenu">
+              
+                                <button mat-menu-item>
+              
+                                <mat-icon>border_color</mat-icon>
+              
+                                <span>Edit</span>
+              
+                                </button>
+              
+                                <button mat-menu-item>
+              
+                                <mat-icon>delete</mat-icon>
+              
+                                <span>Delete</span>
+              
+                                </button>
+              
+                                </mat-menu></th>    
+              
+                            </tbody>
+              
+                         </table>
+              
+                  </div>  
+              
+                   </div>
+              
+                   </div> -->
+
+
+
+
+<!-- 
+                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                    <div class="modal-dialog">
+                  
+                      <div class="modal-content"  style="width: 400px;
+
+                      margin: 250px 0px 0px 0px;">
+                  
+                        <div class="modal-header" style="background-color: #C1DAED; height: 50px;">
+                  
+                          <h2 class="modal-title" id="exampleModalLabel"
+                  
+                          style="color: #0070AC;margin-top: 25px;">Add Department  </h2>
+                  
+                          <img src="../../assets/images/icons8-cross-24.png"  data-bs-dismiss="modal" aria-label="Close" >
+                  
+                        </div>
+
+                        <form name="form"  [formGroup]="checkoutForm">
+
+                          <div class="modal-body"
+
+                           >
+                  
+                  
+                  
+                            <div class="form-group row" >
+                  
+                              <label for="title"> Department name<span class="text-danger">*</span></label>
+                  
+                               <div>
+                  
+                  
+                  
+                                  <input type="text" class="form-control" formControlName="title" id="title123" />
+                  
+                                 
+                  
+                                </div>
+                  
+                           </div>
+                  
+                         
+                  
+                          </div>
+                  
+                          <button type="submit" aria-label="Close" class="btn btn-#0070AC" data-bs-dismiss="modal" aria-label="Close"  style=" border-radius: 18px;background-color:#0070AC ;color: white;width: 100px; margin:0px 0px 30px 22px; "
+                  
+                  
+                  
+                          [disabled]="!checkoutForm.valid">Submit</button>
+                  
+                  
+                  
+                        </form>
+                  
+                      </div>
+                  
+                    </div>
+                  
+                  </div> -->
+
+                  <!-- create -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                    <div class="modal-dialog">
+                  
+                  
+                  
+                      <div class="modal-content"  style="width: 351px;margin: 250px 0px 0px 0px;">
+                  
+                       
+                  
+                        <div class="modal-header" style="background-color: #C1DAED; height: 50px;">
+                  
+                          <h2 class="modal-title" id="exampleModalLabel"
+                  
+                          style="color: #0070AC;margin-top: 25px;">Add Department  </h2>
+                  
+                          <img src="../../assets/images/icons8-cross-24.png"  data-bs-dismiss="modal" aria-label="Close" >
+                  
+                        </div>
+                        <form name="form" [formGroup]="checkoutForm" (ngSubmit)="onSubmit();">
+                          <div class="modal-body" >
+                            <div class="form-group row" >
+                              <label for="departmentname" style="margin: -40px 0px 0px -24px;"> Department name<span class="text-danger">*</span></label>
+                               <div style="margin: -19px 0px 0px -24px;">              
+                                  <input style="width: 301px;" type="text" class="form-control" formControlName="departmentname" id="departmentname"  [(ngModel)]="departments.departmentname" name="title"  />
+                                   <span *ngIf="checkoutForm.get('departmentname')?.touched && checkoutForm.get('departmentname')?.hasError('required')">enter departmentsname it's required*</span>
+                                </div>
+                              </div>
+                          </div>
+                          <button type="submit" aria-label="Close" class="btn btn-#0070AC" data-bs-dismiss="modal" aria-label="Close"  style=" border-radius: 18px;background-color:#0070AC ;color: white;width: 100px; margin:0px 0px 30px 224px; "
+                        >Submit</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <!-- Edit -->
+                  <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+
+                    <div class="modal-dialog">
+                  
+                  
+                  
+                      <div class="modal-content"  style="width: 351px;margin: 250px 0px 0px 0px;">
+                  
+                       
+                  
+                        <div class="modal-header" style="background-color: #C1DAED; height: 50px;">
+                  
+                          <h2 class="modal-title" id="editModalLabel"
+                  
+                          style="color: #0070AC;margin-top: 25px;">Add Department  </h2>
+                  
+                          <img src="../../assets/images/icons8-cross-24.png"  data-bs-dismiss="modal" aria-label="Close" >
+                  
+                        </div>
+                        <form name="form" [formGroup]="checkoutForm" (ngSubmit)="onSubmit();">
+
+                          <div class="modal-body" >
+                  
+                  
+                  
+                            <div class="form-group row" >
+                  
+                              <label for="title" style="    margin: -40px 0px 0px -24px;"> Department name<span class="text-danger">*</span></label>
+                  
+                               <div style="margin: -19px 0px 0px -24px;">
+                  
+                  
+                  
+                                  <input style="width: 301px;" type="text" class="form-control" formControlName="title" id="title123" />
+                  
+                                
+                                   <span *ngIf="checkoutForm.get('departmentsname')?.touched && checkoutForm.get('departmentsname')?.hasError('required')">enter departmentsname it's required*</span>
+                                </div>
+                  
+                           </div>
+                  
+                         
+                  
+                          </div>
+                  
+                          <button type="submit" aria-label="Close" class="btn btn-#0070AC" data-bs-dismiss="modal" aria-label="Close"  style=" border-radius: 18px;background-color:#0070AC ;color: white;width: 100px; margin:0px 0px 30px 224px; "
+                  
+                  
+                  
+                        >Submit</button>
+                        </form>
+                  
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+                       
+                  
+                  
+                     
+
+
+        
+  
+    
+    
+
+
